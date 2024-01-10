@@ -22,3 +22,15 @@
     }
     return outletArray;
 }
+void PrintStringArray(string[] array)
+{
+    int l = 0;
+    System.Console.Write("[");
+    for (l=0; l<array.Length; l++)
+    {
+        System.Console.Write($"\"{array[l]}\"");
+        if (l!=array.Length-1)
+            System.Console.Write(", ");
+    }
+    System.Console.WriteLine("]");
+}
